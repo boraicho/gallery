@@ -1,0 +1,7 @@
+﻿.logo {
+    background: url(/img/logo.png) no-repeat;
+}
+.logo>div{
+    padding-top: 7%;
+    height:0;
+}

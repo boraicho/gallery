@@ -1,0 +1,1 @@
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL.DB\obj\Debug\[BorisCompany]PhotoGallery.DAL.DB.csprojResolveAssemblyReference.cache

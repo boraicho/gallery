@@ -1,0 +1,45 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic
+
+@{
+    IUserScoreBLL scoreLogic = new UserScoreLogic();
+    IPhotoBLL photoLogic = new PhotoLogic();
+    IUserBLL userLogic = new UserLogic();
+
+    Page.Title = "Popular photo";
+}
+<div class="element-position element-style">
+    <div class="row row-position" id="images">
+        @foreach (var item in photoLogic.GetPhoto(Request["requestText"]))
+        {
+            if (Session["Id"] != null && User.Identity.IsAuthenticated)
+            {
+                var score = scoreLogic.ScoreSearch(item.Id, (Guid)Session["Id"]);
+                <div class="col-sm-4 text-color photo-rating">
+                    <div class="photo-name">@item.Name</div>
+                    <img src="~/Photo/View?id=@item.Id" alt="No avatar" class="photo-position photo-style photo" />
+                    <div class="row">
+                        <div class="col-sm-8 photo-info">
+                            <a href="~/User/User?IdUser=@item.IdUserLoad">Load:@userLogic.GetUser(item.IdUserLoad).Login</a>
+                        </div>
+                        <div class="col-sm-4 rating-parent-element">
+                            <span class="glyphicon glyphicon-style glyphicon-chevron-up rating-up @if (score != null && score.Score == 1){<text>glyphicon-chevron-up-sucses</text>}"></span>
+                            <span class="count-rating">@item.AllScore</span>
+                            <span class="glyphicon glyphicon-style glyphicon-chevron-down rating-down @if (score != null && score.Score == -1){<text>glyphicon-chevron-down-sucses</text>}"></span>
+                            <div class="form-group">
+                                <input type="hidden" name="user-identity" class="user-identity" value="@Session["Id"]" />
+                                <input type="hidden" name="photo-identity" class="photo-identity" value="@item.Id" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-sm-4">
+                    <img src="~/Photo/View?id=@item.Id" alt="No avatar" class="photo-position photo-style" />
+                </div>
+            }
+        }
+    </div>
+</div>

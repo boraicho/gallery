@@ -1,0 +1,33 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL;
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic;
+@{
+    IUserBLL userLogic = new UserLogic();
+    IRoleBLL roleLogic = new RoleLogic();
+
+    Page.Title = "AdminPanel";
+}
+<div class="element-position element-style">
+    <div class="row row-position">
+        <table class="table text-color">
+            <thead>
+                <tr>
+                    <th>Login</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in userLogic.GetAllUser())
+                {
+                    if (item.Login != "admin")
+                    {
+                        <tr>
+                            <td>@item.Login</td>
+                            <td>@roleLogic.GetRole(item.Role).Name</td>
+                            <td><a href="~/Admin/ChangeTheUserRole?login=@item.Login" class="btn btn-default btn-sm">Change user role</a></td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

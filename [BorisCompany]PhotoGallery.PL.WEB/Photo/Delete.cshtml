@@ -1,0 +1,30 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL;
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic;
+@if (!User.Identity.IsAuthenticated)
+{
+    Response.SetStatus(HttpStatusCode.Unauthorized);
+    return;
+}
+@if (IsPost)
+{
+    IPhotoBLL photo = new PhotoLogic();
+
+    Guid id = Guid.Parse(Request["Id"]);
+
+    photo.Delete(id);
+    if (IsAjax)
+    {
+        Response.SetStatus(HttpStatusCode.OK);
+    }
+    else
+    {
+        Response.Redirect("~/User/GetAllPhotoUsers");
+    }
+    return;
+}
+else
+{
+    Response.SetStatus(HttpStatusCode.NotFound);
+}
+
+

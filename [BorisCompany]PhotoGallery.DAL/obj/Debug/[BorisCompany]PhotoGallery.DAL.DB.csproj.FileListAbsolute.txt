@@ -1,0 +1,10 @@
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\[BorisCompany]PhotoGallery.DAL.DB.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\[BorisCompany]PhotoGallery.DAL.DB.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\[BorisCompany]PhotoGallery.Entites.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\[BorisCompany]PhotoGallery.Entites.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\obj\Debug\[BorisCompany]PhotoGallery.DAL.DB.csprojResolveAssemblyReference.cache
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\obj\Debug\[BorisCompany]PhotoGallery.DAL.DB.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\obj\Debug\[BorisCompany]PhotoGallery.DAL.DB.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.DAL\bin\Debug\log4net.dll

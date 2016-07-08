@@ -1,0 +1,15 @@
+﻿.photo-info{
+    color:#ffffff;
+    border:1px hidden #000000;
+}
+.glyphicon-chevron-up-sucses{
+    color:#57d81b;
+    border:1px hidden #000000;
+}
+.glyphicon-chevron-down-sucses{
+    color:#ff0000;
+    border:1px hidden #000000;
+}
+.photo-name{
+    text-align:center;
+}

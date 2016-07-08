@@ -1,0 +1,7 @@
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\bin\Debug\[BorisCompany]PhotoGallery.Entites.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\bin\Debug\[BorisCompany]PhotoGallery.Entites.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\obj\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\obj\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Interfaces.DAL\obj\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.pdb

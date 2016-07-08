@@ -1,0 +1,28 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL;
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic;
+
+@if (!User.Identity.IsAuthenticated)
+{
+    Response.SetStatus(HttpStatusCode.Unauthorized);
+    return;
+}
+@if (IsPost)
+{
+    IRoleBLL role = new RoleLogic();
+
+    var title = Request["role"];
+
+    if (string.IsNullOrWhiteSpace(title))
+    {
+        Response.SetStatus(HttpStatusCode.BadRequest);
+        return;
+    }
+
+    role.AddRole(title);
+    Response.Redirect("~/Admin/Roles");
+    return;
+}
+else
+{
+    Response.SetStatus(HttpStatusCode.NotFound);
+}

@@ -1,0 +1,15 @@
+﻿@{
+    _BorisCompany_PhotoGallery.Interfaces.BLL.IPhotoBLL ph = new _BorisCompany_PhotoGallery.BLL.PhotoLogic.PhotoLogic();
+    var stringId = Request["id"];
+    Guid id;
+    if (string.IsNullOrWhiteSpace(stringId) || !Guid.TryParse(stringId, out id))
+    {
+        Response.SetStatus(HttpStatusCode.BadRequest);
+        return;
+   }
+
+    var image = ph.GetPhoto(id);
+
+    Response.WriteBinary(image.Photo, image.ContentType);
+    Response.AddHeader("Content-Disposition", $"inline; filename=\"{image.Name}\"");
+}

@@ -1,0 +1,58 @@
+﻿@if (IsPost)
+{
+    _BorisCompany_PhotoGallery.Interfaces.BLL.IUserBLL us = new _BorisCompany_PhotoGallery.BLL.PhotoLogic.UserLogic();
+
+    string login = Request["login"];
+    string password = Request["password"];
+    string password2 = Request["password2"];
+    if (password != password2)
+    {
+        Response.Redirect("~/Registration?er=error");
+    }
+
+    us.Create(login, password);
+    Response.Redirect("~/Login");
+    return;
+}
+else
+{
+    Layout = "~/_Layout.cshtml";
+    Page.Title = "Registration";
+    <div class="element-position element-style">
+        <div class="row row-position">
+            <div class="col-sm-12">
+                @if (Request["er"] == "error")
+                {
+                    <div>
+                        Passwords do not match
+                    </div>
+                }
+                <form action="~/Registration" method="post" class="form-horizontal center-block text-color" id="registration">
+                    <div class="form-group">
+                        <label for="Login" class="col-sm-2 col-sm-offset-3 control-label">Login</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="login" name="login" placeholder="Login">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 col-sm-offset-3 control-label">User password</label>
+                        <div class="col-sm-3">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2" class="col-sm-2 col-sm-offset-3 control-label">Repeat password</label>
+                        <div class="col-sm-3">
+                            <input type="password" class="form-control" id="password2" name="password2" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-5 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        }

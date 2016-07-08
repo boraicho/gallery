@@ -1,0 +1,31 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL;
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic;
+
+@if (!User.Identity.IsAuthenticated)
+{
+    Response.SetStatus(HttpStatusCode.Unauthorized);
+    return;
+}
+@if (IsPost)
+{
+    Guid idUser = Guid.Parse(Request["IdUser"]);
+    Guid idPhoto = Guid.Parse(Request["IdPhoto"]);
+    int score = int.Parse(Request["Score"]);
+    IUserScoreBLL photo = new UserScoreLogic();
+
+    photo.AddScore(idUser, idPhoto, score);
+    
+    if (IsAjax)
+    {
+        Response.SetStatus(HttpStatusCode.OK);
+    }
+    else
+    {
+        Response.Redirect("~/Photo/New");
+    }
+    return;
+}
+else
+{
+    Response.SetStatus(HttpStatusCode.NotFound);
+}

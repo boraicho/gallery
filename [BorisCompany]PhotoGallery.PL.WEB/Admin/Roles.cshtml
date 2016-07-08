@@ -1,0 +1,58 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL;
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic;
+
+@if (!User.IsInRole("admin"))
+{
+    Response.SetStatus(HttpStatusCode.Forbidden);
+    return;
+}
+@if (!User.Identity.IsAuthenticated)
+{
+    Response.SetStatus(HttpStatusCode.Unauthorized);
+    return;
+}
+@{
+    IRoleBLL role = new RoleLogic();
+    Page.Title = "Roles";
+}
+<div class="element-position element-style">
+    <div class="row row-position">
+        <form action="~/Admin/AddRole" method="post" role="form" class="form-horizontal center-block text-color">
+            <div class="form-group">
+                <label for="role" class="col-sm-2 col-sm-offset-2 control-label">Add new role</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="role" name="role" placeholder="Enter title">
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row row-position">
+        <table class="table text-color">
+            <thead>
+                <tr>
+                    <th>Role's name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in role.GetAll())
+                {
+                    if (item.Name != "Admin")
+                    {
+                    <tr>
+                    <th>@item.Name</th>
+                        <td>
+                            <form action="~/Admin/DeleteRole" method="post">
+                                <input type="hidden" name="id" value="@item.Name" />
+                                <button type="submit" class="btn btn-danger btn-sm">Remove role</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+                 }
+            </tbody>
+        </table>
+    </div>
+</div>

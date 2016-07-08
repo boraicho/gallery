@@ -1,0 +1,14 @@
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\obj\Debug\[BorisCompany]PhotoGallery.BLL.PhotoLogic.csprojResolveAssemblyReference.cache
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.BLL.PhotoLogic.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.BLL.PhotoLogic.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.DAL.DB.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.Entites.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.BLL.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.DAL.DB.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.Entites.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.BLL.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\[BorisCompany]PhotoGallery.Interfaces.DAL.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\obj\Debug\[BorisCompany]PhotoGallery.BLL.PhotoLogic.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\obj\Debug\[BorisCompany]PhotoGallery.BLL.PhotoLogic.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.BLL.PhotoLogic\bin\Debug\log4net.dll

@@ -1,0 +1,5 @@
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Entites\bin\Debug\[BorisCompany]PhotoGallery.Entites.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Entites\bin\Debug\[BorisCompany]PhotoGallery.Entites.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Entites\obj\Debug\[BorisCompany]PhotoGallery.Entites.csprojResolveAssemblyReference.cache
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Entites\obj\Debug\[BorisCompany]PhotoGallery.Entites.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\[BorisCompany]PhotoGallery\[BorisCompany]PhotoGallery.Entites\obj\Debug\[BorisCompany]PhotoGallery.Entites.pdb

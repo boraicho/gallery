@@ -1,0 +1,19 @@
+﻿.element-position {
+    width:90%;
+    margin:auto;
+}
+.element-style{
+    background-color: rgba(50, 50, 50, 0.85);
+    border: 1px solid #000000;
+    border-top:none;
+    border-radius: 2px;
+}
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+.form-position{
+    padding: 0px;
+    border: medium none;
+}

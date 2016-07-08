@@ -1,0 +1,1 @@
+2016-07-09 01:05:19,253 [14] ERROR _BorisCompany_PhotoGallery.DAL.DB.UserDAL [(null)] - Could not find stored procedure 'User_Addsd'.

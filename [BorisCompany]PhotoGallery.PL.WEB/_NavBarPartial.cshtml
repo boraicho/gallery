@@ -1,0 +1,47 @@
+﻿<div class="container">
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="~/Photo/Popular">Popular</a></li>
+                <li><a href="~/Photo/New">New</a></li>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                {
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Admin/Roles">Roles</a></li>
+                            <li><a href="~/Admin/Users">Users</a></li>
+                        </ul>
+                    </li>
+                }
+            </ul>
+            <form action="~/Photo/Search" method="get" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search photo" name="requestText" id="requestText">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <li><a href="~/Login">Input</a></li>
+                    <li><a href="~/Registration">Registration</a></li>
+                }
+                else
+                {
+                    <li></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/User/PasswordChange">Password change</a></li>
+                            <li><a href="~/User/PhotoAdd">Photo load</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="~/User/GetAllPhotoUsers">My photo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="~/Logout">Output</a></li>
+                }
+            </ul>
+        </div>
+    </nav>
+</div>

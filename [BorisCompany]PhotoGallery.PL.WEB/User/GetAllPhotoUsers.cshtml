@@ -1,0 +1,33 @@
+﻿@using _BorisCompany_PhotoGallery.Interfaces.BLL;
+@using _BorisCompany_PhotoGallery.BLL.PhotoLogic;
+@{
+    IUserScoreBLL scoreLogic = new UserScoreLogic();
+    IPhotoBLL photoLogic = new PhotoLogic();
+    Page.Title = "Your photo";
+}
+<div class="element-position element-style">
+    <div class="row row-position text-color" id="images">
+        @foreach (var item in photoLogic.GetAllPhotoUsers((Guid)Session["Id"]))
+        {
+            var score = scoreLogic.ScoreSearch(item.Id, (Guid)Session["Id"]);
+            <div class="col-sm-4 image-remove">
+                <div class="photo-name">@item.Name</div>
+                <img src="~/Photo/View?id=@item.Id" alt="No avatar" class="photo-position photo-style" />
+                <span class="glyphicon glyphicon-remove glyphicon-style glyphicons-position image-delete"></span>
+                <div class="form-group col-sm-8">
+                    <input type="hidden" class="image-identity" id="image-identity" value="@item.Id" />
+                </div>
+                <div class="col-sm-4 rating-parent-element">
+                    <span class="glyphicon glyphicon-style glyphicon-chevron-up rating-up @if (score != null && score.Score == 1){<text>glyphicon-chevron-up-sucses</text>}"></span>
+                    <span class="count-rating">@item.AllScore</span>
+                    <span class="glyphicon glyphicon-style glyphicon-chevron-down rating-down @if (score != null && score.Score == -1){<text>glyphicon-chevron-down-sucses</text>}"></span>
+                    <div class="form-group">
+                        <input type="hidden" name="user-identity" class="user-identity" value="@Session["Id"]" />
+                        <input type="hidden" name="photo-identity" class="photo-identity" value="@item.Id" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
